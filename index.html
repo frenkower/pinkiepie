@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PinkiePie</title>
+
+
+	<link rel = "stylesheet" href = "style/slider.css">
+	<link rel = "stylesheet" href = "style/media.css">
+	<link rel = "stylesheet" href = "style/main.css">
+
+
+	<script src = "script/jQuerry.js"></script>
+	<script src = "script/main.js"></script>
+	<script src = "script/slider.js"></script>
+	<script src = "script/circles.js"></script>
+	<script src = "script/dias.js"></script>	
+
+</head>
+<body>
+	<div class="wrapper">
+
+		<section class="head">
+			<img src="images/sixAng.png" alt="pinck six-ang" class="head_img">
+
+			<h1 class="header">
+				Какой-то слоган
+			</h1>
+			<p class="header_reg">Мы говорим так.</p>
+			<hr>
+			<p class="header_reg2">Краткое какое-то описание<br>
+			чота-там.</p>
+		</section>
+
+		<section class="we">
+			<h1 class="header header_we">
+				Мы такие-то
+			</h1>
+			<hr class = "middle_hr">
+
+			<p class="main_we">
+				Слишком много текста чтобы писать<br>
+				поэтому посмотите налево или вспомните<br>
+				что-то приятное из своей жизни пока вы его<br>
+				читаете, ведь он не несёт абсолютно никакой<br>
+				смысловой нагрузки вообщем-то..<br>
+			</p>
+		</section>
+	</div>
+	<div class="slider">
+		<div class="slides">
+			<!--TAKE YOUR IMAGES-->
+
+			<img src="slides/1.jpg" alt="First slide" class = "slide">
+			<img src="slides/2.jpg" alt="Second slide" class = "slide">
+			<img src="slides/3.jpg" alt="Third Slide" class = "slide">
+			<!--IN ONE SIZE------->
+		</div>
+
+
+		<input type="radio" id = "slider_control1" checked="" name = "slider">
+		<input type="radio" id = "slider_control2" name = "slider">
+		<input type="radio" id = "slider_control3" name = "slider">
+
+
+		<div class="lables">
+			<label for = "slider_control1" class="fl"></label>
+			<label for = "slider_control2" class = "sl"></label>
+			<label for = "slider_control3" class = "tl"></label>
+		</div>
+
+	</div>
+
+	<div class="wrapper">
+
+		<section class="weCan">
+			<h1 class="header">
+				Мы что-то можем
+			</h1>
+			<div class="circles">
+				<div class="circle" id="circles-1"></div>
+				<div class="circle" id="circles-2"></div>
+				<div class="circle" id="circles-3"></div>
+			</div>
+
+
+
+			<div class="circles labels">
+
+				<p class="desc de1">Именно на столько<br>мы... а что мы?
+				</p>
+
+				<p class="desc de2">Ровно половина<br>этого кольца розовая
+				</p>
+
+				<p class="desc de3">Странно что в сумме<br>не вышло сто...
+				</p>
+			</div>
+		</section>
+
+		<section class="oneMore">
+			<h1 class="header header_we">Ещё один раздел</h1>
+			<hr class="middle_hr">
+			<p class="main_we oneTe">
+				Слишком много текста чтобы писать<br>
+				поэтому посмотите налево или вспомните<br>
+				что-то приятное из своей жизни пока вы его<br>
+				читаете, ведь он не несёт абсолютно никакой<br>
+				смысловой нагрузки вообщем-то..<br>
+			</p>
+			<div class="steps">
+				<div class="step step1"><img src="images/analysis.svg" alt="plan"></div>
+				<div class="step step2"><img src="images/handshake.svg" alt="handshake"></div>
+				<div class="step step3"><img src="images/start.svg" alt="roket"></div>
+			</div>
+
+		</section>
+
+		<section class="connect">
+
+			<h1 class="header header_we">Свяжитесь с нами</h1>
+			<hr class="middle_hr">
+
+			<p class="main_we cont">
+				Просто оставьте нам<br>
+				адрес своей электронной почты<br>
+				и мы свяжемся с вами на протяжении часа.
+			</p>
+
+			<form method="POST">
+				<input title = "Введите адресс электронной почты" type="text" name = "mail" placeholder="E-mail" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" required>
+				<div class="button">Отправить</div>
+			</form>
+
+		</section>
+
+	</div>	
+	<footer>
+		<h1 class = "header_we foot_head">
+				Свяжитесь с нами любым удобным для вас способом
+			</h1>
+
+		<div class="socials">
+			<div class="social">
+			<a href="#">	<img src="images/google-plus.svg" alt="">
+			</a>
+			</div>
+
+			<div class="social"><a href="#"><img src="images/facebook.svg" alt=""></a></div>
+			<div class="social"><a href="#"><img src="images/vk.svg" alt=""></a></div>
+			<div class="social"><a href="#"><img src="images/viber.svg" alt=""></a></div>
+			<div class="social"><a href="#"><img src="images/telegram.svg" alt=""></a></div>
+		</div>
+	</footer>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
