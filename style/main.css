@@ -1,0 +1,440 @@
+/*SETUP BEGIN*/
+
+/*MAIN COLORS*/
+
+/*
+
+#eb0150 - pink
+#d1d1d1 - gray
+#970537 - dark pink
+
+*/
+
+@font-face
+{
+    font-family: proxima-regular;
+
+    src: url(../fonts/ProximaNova-Regular_0.ttf);
+}
+
+@font-face
+{
+    font-family: proxima-bold;
+
+    src: url(../fonts/ProximaNova-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: proxima-thin;
+
+    src: url(../fonts/ProximaNova-ThinIt_0.ttf);
+}
+
+@font-face
+{
+    font-family: proxima-light;
+
+    src: url(../fonts/ProximaNova-Light.ttf);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body,
+html
+{
+    font-family: proxima-regular;
+
+    overflow-x: hidden;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    padding-left: 7%;
+}
+
+/*ANIMATIONS*/
+
+@-webkit-keyframes levitation
+{
+    from
+    {
+        margin-top: 2%;
+    }
+    to
+    {
+        margin-top: 7%;
+    }
+}
+@keyframes levitation
+{
+    from
+    {
+        margin-top: 2%;
+    }
+    to
+    {
+        margin-top: 7%;
+    }
+}
+
+/*SETUP END*/
+
+
+.head
+{
+    position: relative;
+
+    padding-top: 5%;
+}
+
+.head_img
+{
+    position: absolute;
+    z-index: -3;
+
+    width: 50%;
+    margin-left: 60%;
+
+    -webkit-animation: levitation 5s infinite alternate ease;
+
+            animation: levitation 5s infinite alternate ease;
+}
+
+.header
+{
+    font-family: proxima-bold;
+    font-size: 500%;
+
+    white-space: nowrap;
+}
+
+
+.header_reg
+{
+    font-family: proxima-regular;
+    font-size: 270%;
+
+    margin-top: -5.3%;
+}
+
+.header_reg2
+{
+    font-family: proxima-regular;
+    font-size: 270%;
+}
+
+hr
+{
+    display: block;
+
+    width: 10%;
+    height: 8px;
+    margin-left: 0;
+
+    color: #eb0150;
+    border-style: solid;
+    background-color: #eb0150;
+}
+
+
+.we
+{
+    margin-top: 50%;
+}
+
+.header_we
+{
+    margin-left: -9%;
+
+    text-align: center;
+}
+
+.middle_hr
+{
+    width: 25%;
+    margin-top: -3.3%;
+    margin-left: 33%;
+}
+
+
+.main_we
+{
+    font-size: 270%;
+
+    margin-top: 14%;
+}
+
+.circle
+{
+    font-family: proxima-bold;
+
+    margin: 5%;
+}
+
+
+
+.circles
+{
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+    width: 100%;
+    margin-left: -4%;
+
+    -webkit-transform: scale(1.53);
+            transform: scale(1.53);
+
+    justify-content: center;
+    -ms-align-items: center;
+        align-items: center;
+}
+
+.labels p
+{
+    display: inline-block;
+
+    margin: 4.3%;
+    margin-top: 1%;
+
+    text-align: center;
+    white-space: nowrap;
+}
+
+.labels
+{
+    margin-left: -3%;
+}
+
+.oneMore
+{
+    margin-top: 12%;
+}
+
+.oneTe
+{
+    margin-top: 10%;
+}
+
+.steps
+{
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+    margin-left: -7%;
+
+    justify-content: space-around;
+    -ms-align-items: center;
+        align-items: center;
+}
+
+.step img
+{
+    width: 100%;
+
+    vertical-align: center;
+}
+
+.step
+{
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+    width: 30%;
+    margin: 12%;
+    padding: 2%;
+
+    -webkit-transform: scale(2.2);
+
+            transform: scale(2.2);
+    white-space: nowrap;
+
+    border-radius: 9999999999999px;
+    background-color: #eb0150;
+
+    justify-content: center;
+    -ms-align-items: center;
+        align-items: center;
+}
+
+
+.step:after
+{
+    font-family: proxima-regular;
+
+    margin-top: 70%;
+}
+
+@-moz-document url-prefix()
+{
+.step:after
+{
+	margin-top: 140%;
+}
+}
+
+.step1:after
+{
+    position: absolute;
+
+    content: 'Нарисуем график';
+}
+
+.step2:after
+{
+    position: absolute;
+
+    content: 'Пожмём руки';
+}
+
+.step3:after
+{
+    position: absolute;
+
+    content: 'Запустим ракету';
+}
+
+
+
+form
+{
+    display:    -moz-flex;
+    display:     -ms-flex;
+    display:      -o-flex;
+    display:         flex;
+
+    width: 100%;
+    margin-top: 15%;
+    margin-left: 5%;
+
+    -webkit-transform: scale(1.1);
+
+            transform: scale(1.1);
+}
+
+input[type = 'text']
+{
+    font-size: 150%;
+
+    width: 30%;
+    height: 40px;
+    padding-left: 1%;
+
+    border: 7px solid #eb0150;
+}
+
+
+input[type = 'text']:focus
+{
+    outline: none !important;
+}
+
+
+input[type = 'text']:invalid
+{
+    outline: none !important;
+}
+
+input[type = 'text']::-webkit-input-placeholder
+{
+    color: #d1d1d1;
+}
+
+input[type = 'text']:-ms-input-placeholder
+{
+    color: #d1d1d1;
+}
+
+input[type = 'text']::-ms-input-placeholder
+{
+    color: #d1d1d1;
+}
+
+input[type = 'text']::placeholder
+{
+    color: #d1d1d1;
+}
+
+.button
+{
+    font-size: 150%;
+
+    display: inline-block;
+
+    margin-left: 12%;
+    padding: 1%;
+    padding-right: 5%;
+    padding-left: 5%;
+
+    transition: .2s all;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+
+    color: white;
+    border-radius: 999999999px;
+    background: linear-gradient(to right, #eb0150, #970537);
+}
+
+.button:hover
+{
+    cursor: pointer;
+
+    opacity: .85;
+}
+
+footer{
+	padding-top: 2%;
+	background: linear-gradient(to top, #eb0150, #970537);
+	width: 100%;
+	height: 40%;
+	margin-top: 15%;
+	padding-left: 4.5%;
+}
+
+.foot_head{
+	color: white;
+	text-align: center;
+}
+
+.social img{
+	width: 10%;
+	transition: 0.2s all;
+}
+
+
+.social img:hover{
+	transform: scale(1.2);
+}
+
+.social{
+	margin-left: -32%;
+}
+
+.socials{
+	margin-left: 30%;
+
+	margin-top: 7%;
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+}
